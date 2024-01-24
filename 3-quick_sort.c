@@ -53,9 +53,11 @@ int partition(int *array, size_t size, int l, int h)
 			firsthigh++;
 		}
 	}
-	swap(&array[p], &array[firsthigh]);
-	if (p != firsthigh)
+	if (array[p] != array[firsthigh])
+	{
+		swap(&array[p], &array[firsthigh]);
 		print_array(array, size);
+	}
 	return (firsthigh);
 }
 
