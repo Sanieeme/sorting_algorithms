@@ -15,7 +15,7 @@ void quick_sort(int *array, size_t size)
 
 /**
  * swap - swap values of two pointers
- * @a: integer
+ * @a: integer pointer
  * @b: integer pointer
  * Return: void
  */
@@ -33,7 +33,7 @@ void swap(int *a, int *b)
  * @size: size of array
  * @l: index of the lower integer
  * @h: index of the higher integer
- * Return: void
+ * Return: Index of the pivot
  */
 int partition(int *array, size_t size, int l, int h)
 {
