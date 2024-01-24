@@ -1,5 +1,4 @@
 #include "sort.h"
-#include <stdlib.h>
 
 int partition(int *array, size_t size, int l, int h);
 void sort(int *array, size_t size, int l, int h);
@@ -13,7 +12,7 @@ void swap(int *a, int *b);
  */
 void quick_sort(int *array, size_t size)
 {
-	if (size < 2)
+	if (array == NULL || size < 2)
 		return;
 	sort(array, size, 0, size - 1);
 }
