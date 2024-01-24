@@ -1,9 +1,5 @@
 #include "sort.h"
 
-int partition(int *array, size_t size, int l, int h);
-void sort(int *array, size_t size, int l, int h);
-void swap(int *a, int *b);
-
 /**
  * quick_sort - implements lotumo partition
  * @array: array of integers
